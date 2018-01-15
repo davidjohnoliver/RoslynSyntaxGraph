@@ -10,6 +10,12 @@ namespace RoslynSyntaxGraph
 	{
 		static void Main(string[] args)
 		{
+			//const string targetSolution = @"C:\src\djo\tests\ConsoleTestbed\ConsoleTestbed.sln";
+			const string targetSolution = @"C:\src\nv\ClubRunner\ClubRunner.sln";
+
+			var wrapper = new GraphBuilder(targetSolution);
+			var nodes = wrapper.BuildGraph().ToArray();
+			;
 		}
 	}
 }
